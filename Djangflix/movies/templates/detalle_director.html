@@ -1,0 +1,8 @@
+<h1>{{ director.nombre }}</h1>
+<p>{{ director.bio }}</p>
+<h2>Películas dirigidas:</h2>
+<ul>
+{% for pelicula in peliculas %}
+    <li><a href="{% url 'detalle_pelicula' pelicula.id %}">{{ pelicula.titulo }}</a></li>
+{% endfor %}
+</ul>

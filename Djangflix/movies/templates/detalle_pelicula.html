@@ -1,0 +1,3 @@
+<h1>{{ pelicula.titulo }}</h1>
+<p>{{ pelicula.descripcion }}</p>
+<p>Dirigida por: <a href="{% url 'detalle_director' pelicula.director.id %}">{{ pelicula.director.nombre }}</a></p>

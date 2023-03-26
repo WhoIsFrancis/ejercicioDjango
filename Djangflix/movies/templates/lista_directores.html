@@ -1,0 +1,6 @@
+<h1>Directores de cine</h1>
+<ul>
+{% for director in directores %}
+    <li><a href="{% url 'detalle_director' director.id %}">{{ director.nombre }}</a></li>
+{% endfor %}
+</ul>
